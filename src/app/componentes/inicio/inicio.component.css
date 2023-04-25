@@ -1,0 +1,14 @@
+ 
+body{
+    background-color: #ffff;
+    font-family: "Montserrat", sans-serif;
+    }
+    
+    ul li{
+        list-style-type: none;
+    margin-left: -3.5%;
+    }
+    
+    .logoAp{
+        filter: invert(1);
+    }

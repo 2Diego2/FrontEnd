@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary justiy-content-center">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+      <img class="logoAp" src="assets/img/logoargp.png" alt="logo-argentina-programa">
+    </a>
+
+    <ul class="list-group list-group-horizontal">
+      <li *ngFor="let icon of icons" class="list-group-item">
+        <a [href]="icon.url">
+          <i class="fab fa-{{icon.name}}"></i>
+        </a>
+        <button (click)="editIcon(icon.name)" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
+        <button (click)="deleteIcon(icon.name)" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+      </li>
+
+      <li class="list-group-item">
+        <button (click)="addIcon()" class="btn btn-success btn-sm"><i class="fas fa-plus"></i> Agregar icono</button>
+      </li>
+    </ul>
+  </div>
+</nav>

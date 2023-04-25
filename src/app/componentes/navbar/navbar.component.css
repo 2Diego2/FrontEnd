@@ -1,0 +1,16 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+body{
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    }
+    
+    ul li{
+        list-style-type: none;
+    margin-left: -3.5%;
+    }
+    
+    .logoAp{
+        filter: invert(1);
+    }
+ 
