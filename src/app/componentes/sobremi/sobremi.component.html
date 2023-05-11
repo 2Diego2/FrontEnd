@@ -4,8 +4,8 @@
       <div class="banner-container">
         <img class="banner-img" src="{{ imagenBanner }}" alt="Banner del sitio web">
         <div class="banner-buttons">
-          <button class="btn btn-primary" (click)="editarImagenBannerVariable = true">Editar</button>
-          <button class="btn btn-danger" (click)="eliminarImagenBanner()">Eliminar</button>
+          <button class="btn btn-primary" (click)="editarImagenBanner()">Editar</button>
+          <button class="btn btn-danger" (click)="eliminarImagenBanner()">Eliminar</button>          
         </div>
       </div>
       <div *ngIf="editarImagenBannerVariable">
@@ -23,28 +23,28 @@
       </div>
     </div>
     <div class="col-lg-12">
-      <div *ngIf="!editMode">
-        <h4>{{textoSobreMi}}</h4>
-        <button class="btn btn-primary" (click)="editMode = true">Editar</button>
-        <button class="btn btn-danger" (click)="eliminarSobreMi()">Eliminar</button>
-      </div>
-      <div *ngIf="editMode">
-        <textarea [(ngModel)]="textoSobreMi"></textarea>
-        <button (click)="guardarCambios()">Guardar cambios</button>
-        <button (click)="cancelarCambios()">Cancelar cambios</button>
-      </div>
-    </div>
+  <div *ngIf="!editMode">
+  <h4>{{textoSobreMi}}</h4>
+  <button class="btn btn-primary" (click)="editMode = true">Editar</button>
+  <button class="btn btn-danger" (click)="eliminarSobreMi()">Eliminar</button>
+</div>
+<div *ngIf="editMode">
+  <input type="text" [(ngModel)]="textoSobreMi">
+  <button (click)="guardarCambios()">Guardar cambios</button>
+  <button (click)="cancelarCambios()">Cancelar cambios</button>
+</div>
+
     
     <div class="col-lg-12">
       <div class="profile-img-container">
-        <img class="profile-img" src="{{ imagenPerfil }}" alt="Mi-Imagen-Personal-" title="Yo">
+        <img class="profile-img" src="/assets/img/IMG-20220211-WA0081.jpg" alt="Mi-Imagen-Personal-" title="Yo">
         <div class="profile-buttons">
           <button class="btn btn-primary" (click)="editarImagenPerfilVariable = true">Editar</button>
           <button class="btn btn-danger" (click)="eliminarImagenPerfil()">Eliminar</button>
         </div>
       </div>
       <div *ngIf="editarImagenPerfilVariable">
-        <input type="file" (change)="onFileSelected($event)">
+        <input type="file" accept="image/*" (change)="onImagenPerfilSeleccionada($event)">
         <button class="btn btn-success" (click)="guardarCambios()">Guardar cambios</button>
         <button class="btn btn-secondary" (click)="cancelarCambios()">Cancelar cambios</button>
       </div>

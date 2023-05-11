@@ -12,6 +12,8 @@ export class NavbarComponent {
     { name: 'codepen', url: 'https://codepen.io/2Diego2' }
   ];
 
+  constructor() { }
+
   editIcon(iconName: string) {
     const newUrl = prompt(`Ingrese la nueva dirección https para ${iconName}`);
     if (newUrl) {
@@ -38,4 +40,3 @@ export class NavbarComponent {
     }
   }
 }
-

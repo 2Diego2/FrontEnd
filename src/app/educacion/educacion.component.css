@@ -1,55 +1,59 @@
+.logo {
+  width: 100px; 
+}
+
 #educacion {
-    background-color: #f9f9f9;
-    padding: 50px;
-  }
-  
-  #educacion h2 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  #educacion ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #educacion li {
-    display: flex;
-    margin-bottom: 30px;
-  }
-  
-  .school-logo {
-    width: 80px;
-    margin-right: 20px;
-  }
-  
-  .school-logo img {
-    max-width: 100%;
-  }
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+#educacion h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#educacion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#educacion li {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.school-logo {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.school-logo img {
+  max-width: 100%;
+}
 
 
-  .escuela-logo {
-    width: 80px;
-    margin-right: 20px;
-  }
-  
-  .escuela-logo img {
-    max-width: 100%;
-  }
-  
-  .education-info {
-    flex-grow: 1;
-  }
-  
-  .education-info h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .education-info p {
-    font-size: 18px;
-    color: #777;
-    margin: 0;
-  }
+.escuela-logo {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.escuela-logo img {
+  max-width: 100%;
+}
+
+.education-info {
+  flex-grow: 1;
+}
+
+.education-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.education-info p {
+  font-size: 18px;
+  color: #777;
+  margin: 0;
+}
